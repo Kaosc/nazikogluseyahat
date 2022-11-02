@@ -1,10 +1,11 @@
 import { useEffect } from "react"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+
 export default function Home() {
-	// useEffect(() => {
-	// 	window.scrollTo({ top: 0, behavior: "smooth" })
-	// }, [])
+	useEffect(() => {
+		window.scrollTo({ top: 0, behavior: "smooth" })
+	}, [])
 
 	return (
 		<div className='App'>

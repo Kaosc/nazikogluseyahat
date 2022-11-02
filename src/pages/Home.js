@@ -12,15 +12,16 @@ export default function Home() {
 			<Header />
 
 			<div className='home-container'>
-				<div className='title-logo'>
+				{/* <div className='title-logo'>
 					<img className='banner-img' src={require("../assets/placeholder.png")} alt='bus' />
-				</div>
-
-				<div className='banner'>
-					<img className='banner-img banner-img-canvas' src={require("../assets/otobus.jpeg")} alt='bus' />
-				</div>
-				<div className='banner'>
-					<img className='banner-img banner-img-canvas' src={require("../assets/info.jpeg")} alt='info' />
+				</div> */}
+				<div className={"banner-container"}>
+					<div className='banner'>
+						<img className='banner-img banner-img-canvas' src={require("../assets/new-banner-1.png")} alt='bus' />
+					</div>
+					<div className='banner'>
+						<img className='banner-img banner-img-canvas' src={require("../assets/new-banner-2.png")} alt='info' />
+					</div>
 				</div>
 
 				<div className='google-map-container'>

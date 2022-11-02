@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 export default function Companies() {
 
@@ -60,6 +61,8 @@ export default function Companies() {
 					</div>
 				))}
 			</div>
+			<Footer />
+
 		</>
 	)
 }

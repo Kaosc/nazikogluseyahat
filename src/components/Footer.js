@@ -42,7 +42,7 @@ export default function Header() {
 				</p>
 
 				<div class='footer-menu'>
-					<a style={{ color: "black", fontSize: 12 }} href='https://kaos.github.io'>
+					<a style={{ color: "black", fontSize: 12 }} href='https://kaosc.github.io'>
 						{" "}
 						Made by Kaosc
 					</a>

@@ -6,9 +6,14 @@
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 70%;
   justify-content: center;
   justify-items: center;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .banner-img {
@@ -16,7 +21,8 @@
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  height: auto;
+  width: 90%;
 }
 
 .banner-img-canvas {
@@ -313,6 +319,8 @@ footer {
     padding-right: 50px;
     padding-left: 50px;
   }
+
+
 }
 
 
@@ -329,7 +337,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1160px) {
 
   .header-contact-text {
     font-size: 13px;
@@ -357,6 +365,16 @@ footer {
   .rentcar-layout {
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .banner-container {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .banner-img {
+    height: auto;
   }
 }
 

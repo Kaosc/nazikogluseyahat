@@ -1,13 +1,7 @@
-import { Link } from "react-router-dom"
-
 import useMediaQuery from "../hooks/useMediaQuery"
-import useScrollDirection from "../hooks/useScrollDirection"
-import HeaderButtons from "./HeaderButtons"
 
 export default function Header() {
 	const desktop = useMediaQuery("(min-width: 1366px)")
-	const tablet = useMediaQuery("(max-width: 1150px)")
-	const mobile = useMediaQuery("(max-width: 668px)")
 
 	return (
 		<footer>

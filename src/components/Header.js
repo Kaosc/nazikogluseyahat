@@ -1,21 +1,26 @@
+import { Link } from "react-router-dom"
+
 import logo from "../assets/logo.png"
 import whatsapp from "../assets/whatsapp.png"
 import callCenter from "../assets/call_center.png"
-import React from "react"
-import useMediaQuery from "../hooks/useMediaQuery";
 
-import HeaderServices from "./HeaderServices"
+import useMediaQuery from "../hooks/useMediaQuery"
+import useScrollDirection from "../hooks/useScrollDirection"
+import HeaderButtons from "./HeaderButtons"
+
 export default function Header() {
-	const desktop = useMediaQuery('(max-width: 960px)');
-	const tablet = useMediaQuery('(max-width: 1150px)');
-	const mobile = useMediaQuery('(max-width: 668px)');
+	const tablet = useMediaQuery("(max-width: 1150px)")
+	const mobile = useMediaQuery("(max-width: 668px)")
+	const scrollDirection = useScrollDirection()
 
 	return (
-		<div>
+		<div className='header' style={{ top: scrollDirection === "down" ? "-245px" : "0" }}>
 			<div className='header-container'>
-				<img src={logo} className='logo' alt='logo' />
-				{!mobile && !tablet && <HeaderServices/>}
-				<div className='header-contact' style={{borderLeft: "solid 1px"}}>
+				<Link to={"/"}>
+					<img src={logo} className='logo' alt='logo' />
+				</Link>
+				{!mobile && !tablet && <HeaderButtons />}
+				<div className='header-contact' style={{ borderLeft: "solid 1px" }}>
 					<div className='header-contact-in-container'>
 						<img src={whatsapp} className='header-contact-icons' alt='logo' />
 						<div>
@@ -32,9 +37,11 @@ export default function Header() {
 					</div>
 				</div>
 			</div>
-			{(mobile || tablet) && <div className="navbar">
-				 <HeaderServices/>
-			</div>}
+			{(mobile || tablet) && (
+				<div>
+					<HeaderButtons />
+				</div>
+			)}
 		</div>
 	)
 }

@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-export default function HeaderServices() {
+export default function HeaderButtons() {
 	return (
-		<div className='header-services'>
+		<div className='header-buttons'>
 			<Link to='/services'>
 				<button className='nav-btn'>
 					<p className=''>Hizmetlerimiz</p>

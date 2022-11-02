@@ -1,6 +1,11 @@
+import { useEffect } from "react"
 import Header from "../components/Header"
 
 export default function Companies() {
+
+	useEffect(() => {
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	},[])
 
 	const companies = [
 		{
@@ -44,11 +49,11 @@ export default function Companies() {
 	return (
 		<>
 			<Header />
-			<div className='services-layout'>
+			<div className='companies-layout'>
 				{companies.map((item) => (
-					<div key={item.id} className='services-card'>
+					<div key={item.id} className='companies-card fade-in-card'>
 						<h1 className="text-6xl p-7">{item.name}</h1>
-						<hr />
+						<hr  style={{borderBlockColor: "#9c9b9b"}}/>
 						<div className="company-logo" >
 							<img alt='company-logo' src={require(`../assets/firmalar/${item.id}.png`)} />
 						</div>

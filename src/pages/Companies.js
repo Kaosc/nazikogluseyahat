@@ -14,7 +14,7 @@ export default function Companies() {
 		},
 		{
 			id: "aras",
-			name: "Gülaras",
+			name: "Özgülaras",
 		},
 		{
 			id: "artvin",
@@ -42,7 +42,7 @@ export default function Companies() {
 		},
 		{
 			id: "yildiz",
-			name: "Yıldız",
+			name: "Tokat Yıldızı",
 		},
 	]
 

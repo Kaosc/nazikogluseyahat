@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import RentCar from "./pages/RentCar"
 import Services from "./pages/Services"
 import Companies from "./pages/Companies"
+import React from "react"
 
 function App() {
   const Pages = () => {

@@ -1,10 +1,77 @@
+.home-container {
+  background-image: linear-gradient(to top, #a8a8a8, #ababab, #aeaeae, #b2b2b2, #b5b5b5, #b8b8b8, #bcbcbc, #bfbfbf, #c3c3c3, #c8c8c8, #cccccc, #d1d1d1);
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  justify-content: center;
+  justify-items: center;
+}
+
+.banner-img {
+  margin: 10px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.banner-img-canvas {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 5px;
+}
+
+.adress-title {
+  background-image: linear-gradient(to left, #919191, #999999, rgb(143, 143, 143), #999999, #919191);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  text-align: center;
+  padding: 5px;
+  font-size: 30px;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.adress-body {
+  background-image: linear-gradient(to left, #919191, #999999, rgb(143, 143, 143), #999999, #919191);
+  box-shadow: rgba(85, 85, 85, 0.61) 0px 1px 3px, rgba(124, 123, 123, 0.664) 0px 1px 2px;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.google-map-container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding-bottom: 15px;
+}
+
+.google-map {
+  border-width: 10px;
+  border-color: #919191;
+  width: 700px;
+  height: 300px;
+  width: 100%;
+}
+
+/* HEADER */
+
 .header {
   position: sticky;
   width: 100%;
   top: 0;
   z-index: 4;
   /* scroll animation */
-  transition-property: all; 
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
 }
@@ -44,7 +111,7 @@
 
 .header-contact-text {
   margin: 0;
-  font-size:1.6rem;
+  font-size: 1.6rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -78,23 +145,21 @@
 a:link {
   text-decoration: none;
 }
+
 a:visited {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: none;
 }
+
 a:active {
   text-decoration: none;
 }
 
-
-.companys-container {
-
-}
-
 .companies-layout {
-  justify-items: center;  
+  justify-items: center;
   align-content: center;
   margin-top: 50px;
   display: grid;
@@ -122,7 +187,7 @@ a:active {
 /* RENT A CAR */
 
 .rentcar-layout {
-  justify-items: center;  
+  justify-items: center;
   align-content: center;
   margin-top: 50px;
   display: grid;
@@ -140,7 +205,7 @@ a:active {
   margin: 15px;
   border-radius: 20px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  
+
 }
 
 .rentcar-title {
@@ -161,11 +226,86 @@ a:active {
   border-radius: 30px;
 }
 
+/* FOOTER */
+
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to left, #b9b9b9, #bebebe, rgb(195, 195, 195), #c8c8c8, #cdcdcd);
+  color: rgb(0, 0, 0);
+}
+
+.footer-content {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+
+.socials {
+  padding: 3px;
+  display: flex;
+}
+
+.socials img {
+  width: 37px;
+}
+
+.social-container {
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.social-container h4 {
+  font-size: 17px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+.footer-bottom {
+  background-image: linear-gradient(to left, #6e6e6e, #a5a5a5, rgba(129, 129, 129, 0.623), #a5a5a5, #6e6e6e);
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  float: left;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom p a {
+  color: #000000;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-menu {
+  float: right;
+}
+
+
+/******************************* BREAKPOINTS ******************************/
+
 @media only screen and (max-width: 1731px) {
   .nav-btn {
     font-size: 16px;
     padding-top: 45px;
   }
+
+  .home-container {
+    width: 90%;
+  }
+
+  .banner-img {
+    width: 85%;
+  }
+
 }
 
 @media only screen and (max-width: 1550px) {
@@ -181,7 +321,8 @@ a:active {
     padding-right: 30px;
     padding-left: 30px;
   }
-    .companies-layout {
+
+  .companies-layout {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
   }
@@ -189,11 +330,11 @@ a:active {
 }
 
 @media only screen and (max-width: 1150px) {
- 
+
   .header-contact-text {
     font-size: 13px;
   }
-  
+
   .header-contact-number {
     font-size: 17px;
   }
@@ -220,6 +361,7 @@ a:active {
 }
 
 @media only screen and (max-width: 840px) {
+
   /* COMPANIES */
   .companies-layout {
     grid-template-rows: repeat(1, 1fr);
@@ -237,16 +379,24 @@ a:active {
 }
 
 @media only screen and (max-width: 668px) {
- 
+
+  .home-container {
+    width: 95%;
+  }
+
+  .banner-img {
+    width: 100%;
+  }
+
   .header-contact-icons {
     height: 30px;
   }
-  
+
   .header-contact-in-container {
     align-items: center;
     justify-content: center;
   }
-  
+
   .header-contact-number {
     font-size: 14px;
   }
@@ -258,7 +408,7 @@ a:active {
   .rentcar-title {
     font-size: 27px;
   }
-  
+
   .rentcar-call-text {
     font-size: 20px;
   }
@@ -267,20 +417,33 @@ a:active {
     padding: 15px;
   }
 
+  .footer-bottom {
+    display: grid;
+    padding-bottom: 20px;
+  }
+
+  .footer-bottom p a {
+    font-size: 14px;
+  }
+
+  .footer-menu {
+    float: none;
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 338px) {
   .header-contact-text {
     font-size: 11px;
   }
-  
+
   .header-contact-number {
     font-size: 14px;
   }
 }
 
 @media only screen and (max-width: 308px) {
-  
+
   .header-contact-number {
     font-size: 12px;
   }
@@ -288,8 +451,16 @@ a:active {
 
 /* ANIMATIONS */
 
-.fade-in-card { animation: fadeIn 0.2s; }
+.fade-in-card {
+  animation: fadeIn 0.2s;
+}
+
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

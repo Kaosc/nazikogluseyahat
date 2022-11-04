@@ -13,16 +13,15 @@
 
 .banner-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .banner-img {
-  margin: 10px;
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
-  height: auto;
-  width: 90%;
+  width: 600px;
+  height: 600px;
 }
 
 .banner-img-canvas {
@@ -308,9 +307,6 @@ footer {
     width: 90%;
   }
 
-  .banner-img {
-    width: 85%;
-  }
 
 }
 
@@ -319,8 +315,6 @@ footer {
     padding-right: 50px;
     padding-left: 50px;
   }
-
-
 }
 
 
@@ -335,7 +329,20 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .banner-img {
+    width: 500px;
+    height: 500px;
+  }
+
 }
+
+@media only screen and (max-width: 1232px) {
+  .banner-img {
+    width: 470px;
+    height: 470px;
+  }
+}
+
 
 @media only screen and (max-width: 1160px) {
 
@@ -367,14 +374,14 @@ footer {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .banner-img {
+    width: 650px;
+    height: 650px;
+  }
+
   .banner-container {
     display: grid;
-    margin-left: auto;
-    margin-right: auto;
-    
-  }
-  .banner-img {
-    height: auto;
+    gap: 25px;
   }
 }
 
@@ -393,7 +400,10 @@ footer {
   .nav-btn {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   }
-
+  .banner-img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media only screen and (max-width: 668px) {
@@ -404,6 +414,7 @@ footer {
 
   .banner-img {
     width: 100%;
+    height: 100%;
   }
 
   .header-contact-icons {

@@ -15,12 +15,12 @@ export default function Home() {
 				{/* <div className='title-logo'>
 					<img className='banner-img' src={require("../assets/placeholder.png")} alt='bus' />
 				</div> */}
-				<div className={"banner-container"}>
+				<div className="banner-container">
 					<div className='banner'>
-						<img className='banner-img banner-img-canvas' src={require("../assets/new-banner-1.png")} alt='bus' />
+						<img className='banner-img banner-img-canvas' src={require("../assets/new-banner-1.png")} alt='banner1' />
 					</div>
 					<div className='banner'>
-						<img className='banner-img banner-img-canvas' src={require("../assets/new-banner-2.png")} alt='info' />
+						<img className='banner-img banner-img-canvas' src={require("../assets/new-banner-2-edited.png")} alt='banner2' />
 					</div>
 				</div>
 

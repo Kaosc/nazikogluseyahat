@@ -1,4 +1,5 @@
 import './styles/App.css';
+import './styles/BurgerMenu.css';
 import { BrowserRouter as Router, useRoutes, } from "react-router-dom"
 import Home from './pages/Home';
 import RentCar from "./pages/RentCar"

@@ -38,7 +38,7 @@ export default function Header() {
 			{/* BOTTOM BAR */}
 			<div class='footer-bottom'>
 				<p>
-					copyright &copy; <a href='#'>Nazikoğlu Seyahat</a>{" "}
+					copyright &copy; Nazikoğlu Seyahat
 				</p>
 
 				<div class='footer-menu'>

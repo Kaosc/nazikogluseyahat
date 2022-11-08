@@ -10,17 +10,24 @@ export default function Home() {
 	return (
 		<div className='App'>
 			<Header />
-
 			<div className='home-container'>
 				{/* <div className='title-logo'>
 					<img className='banner-img' src={require("../assets/placeholder.png")} alt='bus' />
 				</div> */}
-				<div className="banner-container">
+				<div className='banner-container'>
 					<div className='banner'>
-						<img className='banner-img banner-img-canvas' src={require("../assets/new-banner-1.png")} alt='banner1' />
+						<img
+							className='banner-img banner-img-canvas'
+							src={require("../assets/new-banner-1.png")}
+							alt='banner1'
+						/>
 					</div>
 					<div className='banner'>
-						<img className='banner-img banner-img-canvas' src={require("../assets/new-banner-2-edited.png")} alt='banner2' />
+						<img
+							className='banner-img banner-img-canvas'
+							src={require("../assets/new-banner-2-edited.png")}
+							alt='banner2'
+						/>
 					</div>
 				</div>
 
@@ -38,7 +45,7 @@ export default function Home() {
 						referrerpolicy='no-referrer-when-downgrade'></iframe>
 				</div>
 			</div>
-				<Footer />
+			<Footer />
 		</div>
 	)
 }
